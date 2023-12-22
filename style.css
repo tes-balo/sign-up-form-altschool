@@ -1,0 +1,234 @@
+:root {
+  /* #### SITE-WIDE COLORS #### */
+
+  --color-primary: #6a6ff5;
+  --color-tertiary: #7b7b7b;
+  --color-error: #ff4d4f;
+  --color-link: #1677ff;
+
+  /*  #### FONT SIZES AND LINE HEIGHTS #### */
+
+  --font-size: 14px;
+  --font-size-form-text: 14px;
+  --font-size-lg: 16px;
+  --font-size-heading-1: 38px;
+  --font-size-heading-2: 30px;
+  --font-size-subheading-: 20px;
+  --line-height-heading: 30px;
+  --line-height-subheading: 20px;
+  --line-height-form: 1.57142;
+
+  /*  #### SPACING #### */
+
+  --margin-bottom-heading: 10px;
+  --margin-bottom-subheading: 25px;
+  --fill-container: 100%;
+
+  /*  #### TEXT-COLORS #### */
+  --color-form-text: #000000e0;
+  --color-text-heading: #0b1e4b;
+  --color-text-subheading: #7b7b7b;
+  --color-text-label: rgba(0, 0, 0, 0.65);
+  --color-text-input: #0b1e4b;
+  --color-text-btn-primary: #fff;
+
+  /* #### BORDERS ####*/
+  --border-radius: 4px;
+  --border-input: 1px solid #2054d2;
+  --padding-input: 12px 24px 12px 10px;
+  --border-input-color: #d8dbdf;
+
+  /* #### FONTS #### */
+  --typeface-primary: Almarena, sans-serif;
+  --typeface-label: 'Segoe UI', 'Arial', sans-serif;
+}
+
+/* #### TYPEFACES #### */
+
+@font-face {
+  font-family: Almarena;
+  src: url(assets/fonts/Almarena-Almarena.otf) format('opentype');
+}
+
+@font-face {
+  font-family: AlmarenaBold;
+  src: url(assets/fonts/Almarena-Almarena-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: AlmarenaDisplayBold;
+  src: url(assets/fonts/Almarena-Almarena-Display-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: AlmarenaDisplayLight;
+  src: url(assets/fonts/Almarena-Almarena-Display-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: AlmarenaDisplayRegular;
+  src: url(assets/fonts/Almarena-Almarena-Display-Regular.otf)
+    format('opentype');
+}
+
+@font-face {
+  font-family: AlmarenaLight;
+  src: url(assets/fonts/Almarena-Almarena-Light.otf) format('opentype');
+}
+
+.logo-container {
+  width: 100px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 16px;
+  }
+}
+
+.form-container {
+  background: #fff;
+  border-radius: var(--border-radius);
+  padding: 30px 30px 16px;
+}
+
+form {
+  color: var(--font-size-form-text);
+  font-size: var(--font-size-form-text);
+  line-height: var(--line-height-form);
+}
+
+.form-heading {
+  font-family: 'AlmarenaDisplayBold', 'sans-serif';
+  font-size: var(--font-size-heading-2);
+  line-height: var(--line-height-heading);
+  color: var(--color-text-heading);
+  margin-bottom: 10px;
+}
+
+.form-subheading {
+  font-size: var(--font-size-subheading-);
+  color: var(--color-text-heading);
+  /* margin-bottom: 24px; */
+}
+
+.form-vertical {
+  /* jjj */
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.form-item-container {
+  /* display: flex; */
+}
+
+.form-item-label-info {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+label {
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--font-size-form-text);
+  height: auto;
+}
+
+label::after {
+  display: block;
+  content: '*';
+}
+
+.form-item-input {
+  width: 100%;
+}
+
+/* .subheading {
+  font-size: var(--font-size-subheading-);
+  color: var(--color-text-heading);
+} */
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-btn-ptimary);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 12px 24px;
+  font-size: var(--font-size);
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.form-footer {
+}
+
+input:hover,
+input:focus {
+  border: var(--border-input);
+}
+
+input:required {
+  content: '*';
+}
+
+input {
+  background: transparent;
+  border: var(--border-input);
+  border-radius: var(--border-radius);
+  color: var(--typeface-primary);
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+}
+
+input::placeholder {
+}
+
+/* 
+.btn-primary {
+  width: var(--fill-container);
+  margin: auto;
+  color: var(--color-text-btn-ptimary);
+
+  width: 100%;
+  padding: 12px 0px;
+  background: rgb(106, 111, 245);
+  color: rgb(255, 255, 255);
+  font-family: Almarena, sans-serif;
+  display: flex;
+  border: none;
+  border-radius: 4px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+} */
+
+.form-footer-text {
+  font-size: 1em;
+  font-family: AlmarenaDisplayRegular, sans-serif;
+  line-height: 20px;
+  text-align: center;
+  margin-top: 25px;
+  color: rgb(71, 71, 71);
+}
