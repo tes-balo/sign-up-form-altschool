@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   </head>
@@ -19,7 +19,251 @@
       </svg>
     </div>
 
+    <div class="form-container">
+      <form action="">
+        <div class="form-heading">
+          Application Form
+        </div>
+        <div class="form-subheading">
+          Fill in your details
+        </div>
+        <div class="form-vertical">
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
 
+                <div class="form-item-label-info">
+                  <label for="fname">First Name</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="text" id='fname' placeholder='Enter first name'>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="lname">Last Name</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="text" id='lname' placeholder='Enter last name'>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="gen">Gender</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='gen' placeholder='Select gender'>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="empty">Female</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="dob">Date Of Birth</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="date" id='dob' placeholder='dd/mm/yyyy'>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="mail">Email Address</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="email" id='mail' placeholder='Enter email address'>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="edu">Education Level</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='edu' placeholder='Select level of education'>
+                    <option value="male">Bsc</option>
+                    <option value="female">Msc</option>
+                    <option value="empty">Diploma</option>
+                    <option value="empty">Doctorate (PhD)</option>
+                    <option value="empty">High School / Secondary School</option>
+                    <option value="empty">Under Graduate</option>
+                    <option value="empty">Junior / Middle School</option>
+                    <option value="empty">Post Graduate</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="country">Country</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='countryOResidence' placeholder='Select your country'>
+                    <option value="Nigeria">Select your country</option>
+                    <option value="Nigeria">Nigeria</option>
+                    <option value="Togo">Togo</option>
+                    <option value="Algeria">Algeria</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="state">State/City of Residence</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="text" id='state' placeholder='Enter your state of residence'>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="employment">Employment Status</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='employment'>
+                    <option value="empty">Select employment status</option>
+                    <option value="employed">employed</option>
+                    <option value="unemployed">unemployed</option>
+                    <option value="self-employed">self-employed</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="num">Phone Number</label>
+                </div>
+                <div class="form-item-input">
+                  <input type="number" id='num' placeholder='08154387000'>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="school">School</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='school' placeholder='Select school'>
+                    <option value="empty">Select school</option>
+                    <option value="s-data">School of Data</option>
+                    <option value="s-engineering">School of Engineering</option>
+                    <option value="product">School of Product</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="course">Choose Course of Study</label>
+                </div>
+                <div class="form-item-input">
+                  <select id='course'>
+                    <option value="empty">Select Course</option>
+                    <option value="data-analytics">Data Analytics</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="product-design">Product Design</option>
+                    <option value="product-marketing">Product Marketing</option>
+                    <option value="frontend">Frontend Engineering</option>
+                    <option value="backend">Backend Engineering</option>
+                    <option value="cloud">Cloud Engineering</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+
+            <div>
+              <div class="form-item-container">
+
+                <div class="form-item-label-info">
+                  <label for="hear">How did you hear about us?</label>
+                </div>
+                <div class="form-item-input">
+                  <select name="hear" id="hear">
+                    <option value="empty"></option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Twitter">Twitter</option>
+                    <option value="" Linkedin="">Linkedin</option>
+                    <option value="Youtube">Youtube</option>
+                    <option value="Friend">Friend</option>
+                    <option value="Whatsapp">Whatsapp</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Billboard">Billboard</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="form-item-container">
+
+              <div class="form-item-label-info optional">
+                <label for="scholarship">Scholarship/Discount Code (optional)</label>
+              </div>
+              <div class="form-item-input">
+                <input type="text" id='scholarship'
+                  placeholder='Scholarship or student ID or discount codes first name'>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </form>
+    </div>
 
   </body>
 

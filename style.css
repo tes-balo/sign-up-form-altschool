@@ -67,13 +67,19 @@
 
 @font-face {
   font-family: AlmarenaDisplayRegular;
-  src: url(assets/fonts/Almarena-Almarena-Display-Regular.otf)
-    format('opentype');
+  src: url(assets/fonts/Almarena-Almarena-Display-Regular.otf) format('opentype');
 }
 
 @font-face {
   font-family: AlmarenaLight;
   src: url(assets/fonts/Almarena-Almarena-Light.otf) format('opentype');
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .logo-container {
@@ -103,12 +109,14 @@ h6 {
   background: #fff;
   border-radius: var(--border-radius);
   padding: 30px 30px 16px;
+  width: 100%;
 }
 
 form {
   color: var(--font-size-form-text);
   font-size: var(--font-size-form-text);
   line-height: var(--line-height-form);
+  width: 100%;
 }
 
 .form-heading {
@@ -127,6 +135,7 @@ form {
 
 .form-vertical {
   /* jjj */
+  width: 100%;
 }
 
 .form-row {
